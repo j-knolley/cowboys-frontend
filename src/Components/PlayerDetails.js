@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import "/Users/jnawlee/Desktop/fullstack-portfolio-project/cowboys-react/src/styles.css"
 const API = process.env.REACT_APP_API_URL;
 
 function PlayerDetails() {
@@ -36,47 +37,81 @@ function PlayerDetails() {
   }, [id, navigate]);
 
   // Return JSX content for rendering
-  return (
-    <>
-      {/* Display kick details */}
-      <article className="container Player-Details">
-        <h2>
-          {/* Display a star icon if the kick is marked as a favorite */}
-          {player.name}
-        </h2>
-        <h3>
-          Number: {player.player_number}
+//   return (
+//     <>
+//       {/* Display kick details */}
+//       <article className="Player-Details">
+//         <h2>
+//           {/* Display a star icon if the kick is marked as a favorite */}
+//           {player.name}
+//         </h2>
+//         <h3>
+//           Number: {player.player_number}
 
-        </h3>
-        <h3>Year joined: {player.year_joined}</h3>
-        <h3>
-          <span>Position: </span>
-          {player.position}
-        </h3>
-      </article>
+//         </h3>
+//         <h3>Year joined: {player.year_joined}</h3>
+//         <h3>
+//           <span>Position: </span>
+//           {player.position}
+//         </h3>
+//       </article>
 
-      {/* Display navigation buttons */}
-      <div className="showNavigation">
-        <div>
-          {/* Button to navigate back to the '/kicks' route */}
-          <button>
-            <Link to={`/players`}>Back</Link>
-          </button>
-        </div>
+//       {/* Display navigation buttons */}
+//       <div className="showNavigation">
+//         <div>
+//           {/* Button to navigate back to the '/kicks' route */}
+//           <button>
+//             <Link to={`/players`}>Back</Link>
+//           </button>
+//         </div>
 
-        <div>
-          {/* Button to navigate to the 'edit' route for the current kick */}
-          <button>
-            <Link to={`/players/${id}/edit`}>Edit</Link>
-          </button>
-        </div>
-        <div>
-          {/* Button to delete the current kick */}
-          <button onClick={deletePlayer}>Delete</button>
-        </div>
+//         <div>
+//           {/* Button to navigate to the 'edit' route for the current kick */}
+//           <button>
+//             <Link to={`/players/${id}/edit`}>Edit</Link>
+//           </button>
+//         </div>
+//         <div>
+//           {/* Button to delete the current kick */}
+//           <button onClick={deletePlayer}>Delete</button>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+return (
+  <div className="center-container">
+    <article className="CenteredBox">
+      <h2>{player.name}</h2>
+
+      <h3>Number: {player.player_number}</h3>
+
+      <h3>Year joined: {player.year_joined}</h3>
+      
+      <h3>
+        <span>Position: </span>
+        {player.position}
+      </h3>
+    </article>
+
+    <div className="showNavigation">
+      <div>
+        <button>
+          <Link to={`/players`}>Back</Link>
+        </button>
       </div>
-    </>
-  );
+      <div>
+        <button>
+          <Link to={`/players/${id}/edit`}>Edit</Link>
+        </button>
+      </div>
+      <div>
+        <button onClick={deletePlayer}>Delete</button>
+      </div>
+    </div>
+  </div>
+);
 }
 
 // Export the KickDetails component

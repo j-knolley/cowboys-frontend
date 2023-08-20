@@ -6,6 +6,7 @@ export default function NavBar() {
     <nav className="NavBar">
       <h1>
         <NavLink className="NavLink" to="/">Dallas Cowboys</NavLink>
+        <NavLink className="NavLink" to="/players/new">New Player</NavLink>
       </h1>
     </nav>
   );
