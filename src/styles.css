@@ -1,0 +1,29 @@
+.CenteredBox {
+    display: flex;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px; /* Adjust as needed */
+    max-height: 600px; /* Adjust as needed */
+    margin: auto;
+    box-shadow: 10px 5px 5px blue; /* Shadow effect */
+    background-color: white; /* Background color */
+  }
+
+  .PlayersTable {
+    width: 100%;
+    /* Other table styles... */
+  }
+  
+  .PlayersTable a {
+    text-decoration: none;
+    color: blue; /* Link text color */
+    cursor: pointer;
+  }
+  
+  .PlayersTable a:hover {
+    text-decoration: none;
+    color: #ffcc00; /* Hover color */
+  }
+  
+  
