@@ -18,7 +18,7 @@ function PlayerNewForm() {
     name: "",
     position: "",
     player_number: "",
-    year_joined: "",
+    team: "",
   });
 
   // Function to send a POST request to add a new kick
@@ -90,12 +90,12 @@ function PlayerNewForm() {
           onChange={handleTextChange}
           placeholder=""
         />
-        <label htmlFor="year_joined">Year Joined</label>
+        <label htmlFor="team">Team</label>
         <input
-          id="year_joined"
+          id="team"
           type="text"
-          name="year_joined"
-          value={player.year_joined}
+          name="team"
+          value={player.team}
           onChange={handleTextChange}
         />
         {/* <label htmlFor="is_favorite">Favorite</label>

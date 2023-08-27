@@ -49,7 +49,7 @@ function PlayerDetails() {
 //           Number: {player.player_number}
 
 //         </h3>
-//         <h3>Year joined: {player.year_joined}</h3>
+//         <h3>Team: {player.team}</h3>
 //         <h3>
 //           <span>Position: </span>
 //           {player.position}
@@ -82,17 +82,23 @@ function PlayerDetails() {
 
 return (
   <div className="center-container">
-    <article className="CenteredBox">
+    <article className="CenteredBox_two">
       <h2>{player.name}</h2>
 
       <h3>Number: {player.player_number}</h3>
 
-      <h3>Year joined: {player.year_joined}</h3>
+      <h3>Team: {player.team}</h3>
       
       <h3>
         <span>Position: </span>
         {player.position}
       </h3>
+      <h3>Total Yards: {player.total_yards}</h3>
+      <h3>Touchdowns: {player.touchdowns} </h3>
+      <h3>Attempts: {player.attempts} </h3>
+      <h3>Completions: {player.completions} </h3>
+      <h3>Long: {player.long} </h3>
+      <h3>Opponent: {player.opponent} </h3>
     </article>
 
     <div className="showNavigation">

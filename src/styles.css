@@ -4,8 +4,8 @@
     color: blue;
     justify-content: center;
     align-items: center;
-    max-width: 500px; /* Adjust as needed */
-    max-height: 600px; /* Adjust as needed */
+    max-width: 600px; /* Adjust as needed */
+    max-height: 700px; /* Adjust as needed */
     margin: auto;
     box-shadow: 10px 5px 5px blue; /* Shadow effect */
     background-color: silver; /* Background color */
@@ -13,7 +13,7 @@
   }
 
   .PlayersTable {
-    width: 100%;
+    width: 115%;
     /* Other table styles... */
   }
   
@@ -37,10 +37,143 @@
     max-height: 500px;
   }
 
+  .CenteredBox_two {
+    display: flex;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px; /* Adjust as needed */
+    max-height: 700px; /* Adjust as needed */
+    margin: auto;
+    box-shadow: 10px 5px 5px blue; /* Shadow effect */
+    background-color: silver; /* Background color */
+    border-radius: 10px;
+  }
+
   .showNavigation {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
   }
   
+
+  /* Navbar */
+
+.NavBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 60px;
+  }
+  
+  .NavLinksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .NavLink {
+    text-decoration: none;
+    color: blue;
+    margin-right: 20px;
+  }
+  
+  .NavLink:hover {
+    color: #ffcc00;
+  }
+  
+  .NavLinkSpacer {
+    margin-right: 20px;
+  }
+  
+  .NavLinkButton {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #124fd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .NavLinkButton:hover {
+    background-color: #0d3daa;
+  }
+
+  /* Sidebar */
+
+  /* styles.css */
+
+.NavSide {
+    width: 250px; /* Adjust as needed */
+    background-color: #333;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .SidebarLink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .SidebarLink:hover {
+    background-color: #0d3daa;
+  }
+  
+  /* Home */
+
+  .Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .New {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Edit {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* This will center the form vertically */
+    background-color: #f0f0f0;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   

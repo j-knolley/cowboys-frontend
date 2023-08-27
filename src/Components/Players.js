@@ -34,7 +34,7 @@ function Players() {
         <table className="PlayersTable">
           <thead>
             <tr>
-              <th>Year Joined</th>
+              <th>Team</th>
               <th>Name</th>
               <th>Position</th>
               <th>Player Number</th>

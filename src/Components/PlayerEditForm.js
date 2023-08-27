@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import '/Users/jnawlee/Desktop/fullstack-portfolio-project/cowboys-react/src/styles.css'
 
 function PlayerEditForm() {
   // Extract the 'id' parameter from the URL
@@ -15,7 +16,7 @@ function PlayerEditForm() {
     name: "",
     position: "",
     player_number: "",
-    year_joined: "",
+    team: "",
   });
 
   // Handler for text input changes
@@ -69,10 +70,10 @@ function PlayerEditForm() {
 
   // Render the form
   return (
-    <div className="New">
+    <div className="Edit">
       <form onSubmit={handleSubmit}>
         {/* Input fields for kick details */}
-        <label htmlFor="name">Kick Name:</label>
+        <label htmlFor="name">Player:</label>
         <input
           id="name"
           value={player.name}
@@ -94,6 +95,48 @@ function PlayerEditForm() {
           value={player.player_number}
           onChange={handleTextChange}
           placeholder=""
+        />
+        <label htmlFor="total_yards">Total Yards</label>
+        <input
+          id="total_yards"
+          type="text"
+          value={player.total_yards}
+          onChange={handleTextChange}
+        />
+        <label htmlFor="touchdowns">Touchdowns</label>
+        <input
+          id="touchdowns"
+          type="text"
+          value={player.touchdowns}
+          onChange={handleTextChange}
+        />
+        <label htmlFor="attempts">Attempts</label>
+        <input
+          id="attempts"
+          type="text"
+          value={player.attempts}
+          onChange={handleTextChange}
+        />
+        <label htmlFor="completions">Completions</label>
+        <input
+          id="completions"
+          type="text"
+          value={player.completions}
+          onChange={handleTextChange}
+        />
+        <label htmlFor="long">Long</label>
+        <input
+          id="long"
+          type="text"
+          value={player.long}
+          onChange={handleTextChange}
+        />
+        <label htmlFor="opponent">Opponent</label>
+        <input
+          id="opponent"
+          type="text"
+          value={player.opponent}
+          onChange={handleTextChange}
         />
 
         {/* <label htmlFor="time">Favorite</label>

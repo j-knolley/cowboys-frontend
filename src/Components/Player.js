@@ -4,7 +4,7 @@ function Player({ player, id }) {
   return (
     <tr className="Player">
       <td>
-        {player.year_joined}
+        {player.team}
       </td>
       <td>
         <Link to={`/players/${id}`}>{player.name}</Link> {/* Creating a link to a specific route based on the 'id' prop, displaying 'kick.name' */}
