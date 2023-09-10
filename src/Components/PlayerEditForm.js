@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import '/Users/jnawlee/Desktop/fullstack-portfolio-project/cowboys-react/src/styles.css'
+
 
 function PlayerEditForm() {
   // Extract the 'id' parameter from the URL
