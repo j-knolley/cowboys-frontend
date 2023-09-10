@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import "/Users/jnawlee/Desktop/fullstack-portfolio-project/cowboys-react/src/styles.css"
+
 const API = process.env.REACT_APP_API_URL;
 
 function PlayerDetails() {

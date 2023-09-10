@@ -1,4 +1,4 @@
-import "/Users/jnawlee/Desktop/fullstack-portfolio-project/cowboys-react/src/styles.css"
+
 
 function Home() {
     return (

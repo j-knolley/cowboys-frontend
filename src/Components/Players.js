@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Player from "./Player"; // Importing the Kick component
-import "/Users/jnawlee/Desktop/fullstack-portfolio-project/cowboys-react/src/styles.css"
+
 
 // Get the API URL from environment variables
 const API = process.env.REACT_APP_API_URL;
